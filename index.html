@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samaruc · Descargas</title>
+  <meta name="description" content="Descargas oficiales de Samaruc, un IDE de 8 bits para Game Boy, ZX Spectrum, Amstrad CPC, Atari, MSX y NES.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="https://retrocueva.vercel.app/samaruc">
+      <img src="assets/logo.png" alt="Logo de Samaruc">
+      <span>SAMARUC</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#descargas">Descargas</a>
+      <a href="#requisitos">Requisitos</a>
+      <a href="#historial">Historial</a>
+      <a href="https://retrocueva.vercel.app/samaruc">Web oficial</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">// IDE DE 8 BITS</p>
+      <h1>Descarga Samaruc</h1>
+      <p class="lead">Un entorno de desarrollo retro con compilador, emuladores y editores gráficos para Game Boy, ZX Spectrum, Amstrad CPC, Atari, MSX y NES.</p>
+      <p class="status" id="status" role="status">Cargando versiones públicas…</p>
+    </section>
+
+    <section class="panel" id="descargas">
+      <div class="section-head">
+        <h2>/ Última versión estable</h2>
+        <span class="badge" id="latest-badge">—</span>
+      </div>
+      <div id="latest-card"></div>
+    </section>
+
+    <section class="panel" id="requisitos">
+      <h2>/ Requisitos mínimos</h2>
+      <ul class="requirements">
+        <li><strong>Instaladores EXE/MSI:</strong> Windows 10 u 11. Incluyen el entorno de ejecución Java.</li>
+        <li><strong>JAR ejecutable:</strong> Java 17 o superior.</li>
+        <li><strong>Incluido:</strong> toolchains y emuladores empaquetados; no hace falta instalar SDKs por separado.</li>
+      </ul>
+      <p class="inline-links">
+        <a href="https://retrocueva.vercel.app/samaruc">Documentación y guía</a>
+        <a href="https://retrocueva.vercel.app">Web oficial del proyecto</a>
+        <a href="https://github.com/ginjol83/samaruc-releases/releases">Todas las releases</a>
+      </p>
+    </section>
+
+    <section class="panel" id="historial">
+      <h2>/ Historial de versiones</h2>
+      <div id="history"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Andrés Giménez · 2026 · MIT</p>
+    <p>Las versiones se publican desde <code>ginjol83/samaruc-releases</code>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
